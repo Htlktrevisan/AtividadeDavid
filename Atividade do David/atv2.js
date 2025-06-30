@@ -1,10 +1,17 @@
-let ParImpar = []
+let separarParimpar = (nums) => {
+    let pares =[]
+    let impares = []
+    let indicePar = 0
+    let indiceImpar = 0
 
-let loteGeralPar = [2,4,6,8,10,12]
-let lotePar = []
-let loteGeralImpar = [1,3,5,7,9,11]
-let loteImpar = []
-
-if {
-
+    for (let i = 0; i < nums.length; i++){
+        if (nums[i] % 2 === 0){
+            pares [indicePar] = nums [i]
+            indicePar++
+        }else {
+            impares[indiceImpar] = nums[i]
+            indiceImpar++
+        }
+    }
+    return 'Os números pares são: ${[pares]} e os ímpares são ${[impares]}'
 }
